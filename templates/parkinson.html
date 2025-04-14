@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parkinson's Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='parkinson.css') }}">
+</head>
+<body>
+    <h2>Parkinson's Disease Prediction</h2>
+    <form method="POST" action="/parkinson">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <input type="text" name="name" placeholder="Name" required><br>
+        <input type="number" step="any" name="MDVP:Fo(Hz)" placeholder="MDVP:Fo(Hz)" required><br>
+        <input type="number" step="any" name="MDVP:Fhi(Hz)" placeholder="MDVP:Fhi(Hz)" required><br>
+        <input type="number" step="any" name="MDVP:Flo(Hz)" placeholder="MDVP:Flo(Hz)" required><br>
+        <input type="number" step="any" name="MDVP:Jitter(%)" placeholder="MDVP:Jitter(%)" required><br>
+        <input type="number" step="any" name="MDVP:Jitter(Abs)" placeholder="MDVP:Jitter(Abs)" required><br>
+        <input type="number" step="any" name="MDVP:RAP" placeholder="MDVP:RAP" required><br>
+        <input type="number" step="any" name="MDVP:PPQ" placeholder="MDVP:PPQ" required><br>
+        <input type="number" step="any" name="Jitter:DDP" placeholder="Jitter:DDP" required><br>
+        <input type="number" step="any" name="MDVP:Shimmer" placeholder="MDVP:Shimmer" required><br>
+        <input type="number" step="any" name="MDVP:Shimmer(dB)" placeholder="MDVP:Shimmer(dB)" required><br>
+        <input type="number" step="any" name="Shimmer:APQ3" placeholder="Shimmer:APQ3" required><br>
+        <input type="number" step="any" name="Shimmer:APQ5" placeholder="Shimmer:APQ5" required><br>
+        <input type="number" step="any" name="MDVP:APQ" placeholder="MDVP:APQ" required><br>
+        <input type="number" step="any" name="Shimmer:DDA" placeholder="Shimmer:DDA" required><br>
+        <input type="number" step="any" name="NHR" placeholder="NHR" required><br>
+        <input type="number" step="any" name="HNR" placeholder="HNR" required><br>
+        <input type="number" step="any" name="RPDE" placeholder="RPDE" required><br>
+        <input type="number" step="any" name="DFA" placeholder="DFA" required><br>
+        <input type="number" step="any" name="spread1" placeholder="spread1" required><br>
+        <input type="number" step="any" name="spread2" placeholder="spread2" required><br>
+        <input type="number" step="any" name="D2" placeholder="D2" required><br>
+        <input type="number" step="any" name="PPE" placeholder="PPE" required><br>
+        <button type="submit">Predict</button>
+    </form>
+
+  
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='heart.css') }}">
+</head>
+<body>
+    <h2>Heart Disease Prediction</h2>
+    <form method="POST">
+        <input type="text" name="name" placeholder="Name" required><br>
+        <input type="number" name="age" placeholder="Age" required><br>
+        <input type="number" name="sex" placeholder="Sex (1 = Male, 0 = Female)" required><br>
+        <input type="number" name="cp" placeholder="Chest Pain Type (0-3)" required><br>
+        <input type="number" name="trestbps" placeholder="Resting Blood Pressure" required><br>
+        <input type="number" name="chol" placeholder="Cholesterol" required><br>
+        <input type="number" name="fbs" placeholder="Fasting Blood Sugar > 120 mg/dl (1 = True; 0 = False)" required><br>
+        <input type="number" name="restecg" placeholder="Resting ECG (0-2)" required><br>
+        <input type="number" name="thalach" placeholder="Max Heart Rate Achieved" required><br>
+        <input type="number" name="exang" placeholder="Exercise Induced Angina (1 = Yes; 0 = No)" required><br>
+        <input type="number" step="any" name="oldpeak" placeholder="ST Depression" required><br>
+        <input type="number" name="slope" placeholder="Slope of ST (0-2)" required><br>
+        <input type="number" name="ca" placeholder="Number of Major Vessels (0-3)" required><br>
+        <input type="number" name="thal" placeholder="Thalassemia (1 = Normal; 2 = Fixed Defect; 3 = Reversible Defect)" required><br>
+        <button type="submit">Predict</button>
+    </form>
+
+</body>
+</html>

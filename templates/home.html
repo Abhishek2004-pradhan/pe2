@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <nav>
+        <div>My App</div>
+        <div>
+            <a href="/home">Home</a>
+            <a href="/parkinson">Parkinson</a>
+            <a href="/heart">Heart</a>
+            <a href="/diabetes">Diabetes</a>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- Parkinson Section -->
+        <div class="section">
+            <h2>Parkinson</h2>
+            <p>Learn more about Parkinson's disease and its prediction.</p>
+            <a href="/parkinson">Explore Parkinson</a>
+        </div>
+        <!-- Heart Section -->
+        <div class="section">
+            <h2>Heart</h2>
+            <p>Understand heart disease and how we can predict it.</p>
+            <a href="/heart">Explore Heart</a>
+        </div>
+        <!-- Diabetes Section -->
+        <div class="section">
+            <h2>Diabetes</h2>
+            <p>Discover insights about diabetes and its prediction.</p>
+            <a href="/diabetes">Explore Diabetes</a>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 My App. All rights reserved.
+    </footer>
+</body>
+</html>
